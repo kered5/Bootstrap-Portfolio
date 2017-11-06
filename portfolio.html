@@ -1,29 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>Portfolio | Chris Platt</title>
+  <title>Bootstrap Demo</title>
+
+  <!-- Bootstrap CDN -->
+
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Chris Platt</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <div class="row">
+    <div class="col-lg-12">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Chris Platt's Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li> 
+        <li><a href="index.html">About</a></li> 
+      </ul>
+  
+    </div>
+  </div>
+</nav
+    </div>
+  </div>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <header id="masthead">
+    
+      <a href="index.html" id="logo">Chris Platt</a>
+
+   
+  </header>
+      </div>
+
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-lg-8">
+
+<section class="main-section">
       <h1>Portfolio</h1>
 
       <div class="work">
@@ -54,7 +95,9 @@
 
     </section>
 
-    <section class="sidebar">
+      </div>
+      <div class="col-lg-4">
+            <section class="sidebar">
       <div id="connect">
         <h2>Connect with Me</h2>
 
@@ -63,13 +106,26 @@
         <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
       </div>
     </section>
-  </div>
+      </div>
 
-  <footer>
+    </div>
+
+    <!-- Row 3 -->
+    
+
+    <!-- Row 4 -->
+    <div class="row">
+      <div class="col-sm-12">
+          <footer>
     <div class="container">
-      Copyright &copy; 2016 Your Name
+      Copyright &copy; 2017 Chris Platt
     </div>
   </footer>
+      </div>
+    
+    </div>
+  </div>
+
 </body>
 
 </html>
